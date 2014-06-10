@@ -1,5 +1,4 @@
-<<<<<<< HEAD
-tipCalculator
+Tip Calculator for Android 
 =============
 
 This is an Android Tip Calculator application for calculating a tip for service. 
@@ -23,9 +22,4 @@ Improved the user interface and experience by using a green dollar sign image.
 Walkthrough of all user stories:
 
 
-=======
-TipCalculatorNew
-================
-
-Android Tip Calculator app 
->>>>>>> cd712a5d7013ccc37c37a80e55922a35884bee0d
+<img alt src="/gifTipCalculator.gif" />
