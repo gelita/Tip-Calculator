@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<resources>
+    <string name="app_name">Tip Calculator</string>
+    <string name="etBillHint">Enter bill amount</string>
+    <string name="btnReset">Reset</string>
+    <string name="tvTipHint">  </string>
+    <string name="txtRadio_low">Poor 15%</string>    
+    <string name="txtRadio_mid">Nice! 20%</string>
+    <string name="txtRadio_high">Superb! 25%</string>    
+    <string name="txtAskService">How was the service?</string>
+    <string name="tvSBValue"></string>
+</resources>

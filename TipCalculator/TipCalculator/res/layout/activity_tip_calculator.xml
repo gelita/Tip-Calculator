@@ -1,0 +1,119 @@
+<RelativeLayout xmlns:tools="http://schemas.android.com/tools"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".TipCalculator" >
+
+    <EditText
+        android:id="@+id/etBill"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:ems="10"
+        android:inputType="numberDecimal"
+        android:hint="@string/etBillHint" >
+        <requestFocus />
+    </EditText>   
+
+    <TextView
+        android:id="@+id/textView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/etBill"
+        android:layout_marginTop="22dp"
+        android:text="@string/txtAskService"
+        android:textStyle="bold"
+        android:textAppearance="?android:attr/textAppearanceMedium" >
+     </TextView>
+
+    <TextView
+        android:id="@+id/tvSBValue"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/seekBar"
+        android:layout_centerHorizontal="true"
+        android:text="@string/tvSBValue"
+        android:textAppearance="?android:attr/textAppearanceLarge" />
+
+    <RadioGroup
+        android:id="@+id/radioGroup"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/textView1"
+        android:layout_toRightOf="@+id/etBill"
+        android:orientation="vertical"
+        
+        >
+
+        <RadioButton
+            android:id="@+id/rd_low"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:labelFor="@+id/txtRadio_low"
+            android:onClick="setTipPercentage"
+            android:text="@string/txtRadio_low"
+            android:textColor="#fff" 
+            android:textStyle="bold"/>
+
+        <RadioButton
+            android:id="@+id/rd_mid"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="setTipPercentage"
+            android:text="@string/txtRadio_mid"
+            android:textColor="#fff"
+            android:textStyle="bold"
+            android:typeface="normal" />
+
+        <RadioButton
+            android:id="@+id/rd_high"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="setTipPercentage"
+            android:text="@string/txtRadio_high"
+            android:textColor="#fff"
+            android:textStyle="bold" />
+    </RadioGroup>
+
+    <SeekBar
+        android:id="@+id/seekBar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/radioGroup"
+        android:layout_marginTop="23dp" />
+
+    <Button
+        android:id="@+id/btnReset"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/tvSBValue"
+        android:layout_marginTop="28dp"
+        android:onClick="resetAll"
+        android:text="@string/btnReset"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/tvTip"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tvSBValue"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="15dp"
+       
+        android:hint="@string/tvTipHint"
+        android:textColor="#fff" />
+
+    <TextView
+         android:id="@+id/tvTotal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tvTip"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="15dp"  
+        android:textColor="#fff" />
+
+</RelativeLayout>
