@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 tipCalculator
 =============
 
@@ -22,3 +23,9 @@ Improved the user interface and experience by using a green dollar sign image.
 Walkthrough of all user stories:
 
 
+=======
+TipCalculatorNew
+================
+
+Android Tip Calculator app 
+>>>>>>> cd712a5d7013ccc37c37a80e55922a35884bee0d
