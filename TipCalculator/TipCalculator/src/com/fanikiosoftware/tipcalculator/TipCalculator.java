@@ -50,15 +50,17 @@ public class TipCalculator extends Activity {
 					return;
 				}else {					
 					tvSBValue.setText(progress +"%");
-					mRadioGroup.clearCheck();
-					Double percent = ((double) progress); 
-					Double bill = Double.parseDouble(etBill.getText().toString());			
-					Double tip = (bill*percent)/100;
-					Double total = bill + tip;
-					tvTip.setText("Tip: $"+ String.format("%.02f", tip));
-					tvTotal.setText("Grand Total: $"+ String.format("%.02f", total));
-				}
-				
+					if(progress>0){
+						mRadioGroup.clearCheck();
+					}else{		
+						Double percent = ((double) progress); 
+						Double bill = Double.parseDouble(etBill.getText().toString());			
+						Double tip = (bill*percent)/100;
+						Double total = bill + tip;
+						tvTip.setText("Tip: $"+ String.format("%.02f", tip));
+						tvTotal.setText("Grand Total: $"+ String.format("%.02f", total));
+					}
+				}				
 				return;
 			}
 
@@ -86,7 +88,6 @@ public class TipCalculator extends Activity {
 		etBill.setText("");
 		tvTip.setText("");
 		tvTotal.setText("");
-		etBill.setError(null);
 		tvSBValue.setText("");		
 		return;
 	}
@@ -103,20 +104,17 @@ public class TipCalculator extends Activity {
 			switch(view.getId()){
 				case R.id.rd_low:
 					if(checked){						
-						percent = .15;						
-						rd_low.setChecked(true);
+						percent = .15;			
 						break;
 					}
 				case R.id.rd_mid:
 					if(checked){
 						percent = .20;
-						rd_mid.setChecked(true);
 						break;
 					}
 				case R.id.rd_high:
 					if(checked){
 						percent = .25;
-						rd_high.setChecked(true);
 						break;
 					}					
 			}
