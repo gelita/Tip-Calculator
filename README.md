@@ -1,8 +1,7 @@
 Tip Calculator for Android 
 =============
 
-This is an Android Tip Calculator application for calculating a tip for service. 
-Time spent: 5-8 hours spent in total.  I completed the basic requirements and then made changes and then reversed some changes. 
+This is an Android Tip Calculator application for calculating a tip for service.
 
 Completed user stories:
 
